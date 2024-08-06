@@ -1,6 +1,29 @@
 body{
     margin: 0;
     padding: 0;
-    background: rgb(222,55,123);
-    background: linear-gradient(90deg, rgba(222,55,123,1) 0%, rgba(168,26,144,1) 50%, rgba(154,41,137,1) 100%);
+    height: 100vh;
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-boxes-wrapper{
+    height: 600px;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center;  */
+    border-radius: 1rem;
+    
+}
+.player-1{
+    height: 100%;
+    width: 50%;
+    background-color: black;
+}
+.player-2{
+    height: 100%;
+    width: 50%;
+    background-color: burlywood;
 }
