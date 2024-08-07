@@ -12,18 +12,18 @@ body{
     height: 600px;
     width: 1000px;
     
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(200px);
+    filter: blur();
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: center;  */
     border-radius: 1rem;
+    overflow: hidden;
+
+
     
 }
 .player{
-    /* height: 100%;
-    width: 50%;
-    background: none;
-    padding: 9rem; */
     flex: 50%;
     padding: 5rem;
     display: flex;
@@ -31,11 +31,7 @@ body{
     align-items: center;
     transition: all 0.75s;
 }
-/* .player-2{
-    height: 100%;
-    width: 50%;
-    background-color: burlywood;
-} */
+
 .btn{
     position: absolute;
     left: 50%;
@@ -111,3 +107,25 @@ body{
     color: #FFFFFF;
     margin: 0px;
 }
+
+.dice{
+    position: absolute;
+    left: 50%;
+    top: 13rem;
+    height: 6rem;
+    transform: translateX(-50%);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.hidden{
+    display: none;
+}
+
+.active-player{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.active-player .name{
+    font-weight: 700;
+}
+
